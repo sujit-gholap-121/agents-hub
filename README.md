@@ -1,49 +1,95 @@
-# Shared agent skills
+# agents-hub
 
-One home for skills used by Claude Code, Codex and Cursor.
+The single source of truth for my AI agent setup. Claude Code, Codex and Cursor all get their
+**skills, subagents, MCP servers and global instructions** from here, via one command:
+
+```sh
+agents-sync
+```
+
+Backed up to the private repo `Escalara-SujitG/agents-hub` (every sync commits and pushes).
+
+## Layout
 
 ```
 ~/.agents/
-├── skills/             THE REAL SKILLS (flat: skills/<name>/SKILL.md). Edit here.
-├── skills-by-group/    Grouped view - links only, for browsing.
-├── .skill-lock.json    Used by `npx skills` (vercel-labs/skills) to track and update skills.
-└── backup-skills-2026-11-07.tgz   Backup taken before the move.
+├── skills/<name>/SKILL.md       skills (flat, the open Agent Skills format)
+├── agents/<name>.md             subagents (Claude-style markdown + frontmatter)
+├── mcp/servers.json             MCP servers, with ${VAR} placeholders for secrets
+├── instructions/AGENTS.md       global rules for every agent
+├── experimental/{skills,agents} only switched on with --with-experimental
+├── groups.json                  which group each skill belongs to
+├── groups/                      generated browsing view (links), don't edit
+├── bin/agents-sync              the sync tool
+├── .env                         secrets for servers.json (NOT in git, chmod 600)
+└── state/                       what the tool manages, logs, config backups (NOT in git)
 ```
 
-## Who reads what
+## What goes where
 
-| Agent       | Reads                                                         |
-|-------------|---------------------------------------------------------------|
-| Codex       | `~/.agents/skills` directly                                   |
-| Claude Code | `~/.claude/skills/<name>` → link to `~/.agents/skills/<name>` |
-| Cursor      | `~/.claude/skills` and `~/.agents/skills`                     |
+| Hub | Claude Code | Codex | Cursor |
+|---|---|---|---|
+| skills | links in `~/.claude/skills` | reads `~/.agents/skills` directly | reads `~/.agents/skills` directly |
+| agents | links in `~/.claude/agents` | generated `~/.codex/agents/*.toml` | links in `~/.cursor/agents` (app) + per-project (CLI, see below) |
+| MCP | `claude mcp add-json -s user` | generated block in `~/.codex/config.toml` | `~/.cursor/mcp.json` |
+| instructions | `~/.claude/CLAUDE.md` (link) | `~/.codex/AGENTS.md` (link) | `~/.cursor/rules/agents-hub.mdc` (always-apply rule) |
 
-Built-in skills stay where their app manages them, so they're not moved:
-`~/.claude/skills/synced` (Claude app), `~/.codex/skills/.system` (Codex),
-`~/.cursor/skills-cursor` (Cursor).
-
-## Groups
-
-| Group                  | Skills |
-|------------------------|--------|
-| agents-and-terminals   | herdr, call-cursor-agent, find-skills, full-output-enforcement |
-| design-ui              | apple-design, design-taste-frontend(-v1), gpt-taste, high-end-visual-design, minimalist-ui, industrial-brutalist-ui, stitch-design-taste, redesign-existing-projects, web-design-guidelines, image-to-code |
-| mockups-and-branding   | imagegen-frontend-web, imagegen-frontend-mobile, brandkit |
-| higgsfield-media       | all higgsfield-* |
-| backend-database       | supabase, supabase-postgres-best-practices |
-| testing-browser        | playwright-cli |
-| reverse-engineering    | reverse-engineer-anything |
-
-## Adding a skill
+**Cursor CLI and agents:** `cursor-agent` only loads subagents from the project it is opened in.
+Register a project once and every sync keeps it current (its git ignores the links locally):
 
 ```sh
-# 1. put it in the shared folder
-mv my-skill ~/.agents/skills/            # (or: npx skills add <repo> - it installs here)
-# 2. let Claude Code see it
-ln -s ../../.agents/skills/my-skill ~/.claude/skills/my-skill
-# 3. file it in a group
-ln -s ../../skills/my-skill ~/.agents/skills-by-group/<group>/my-skill
+agents-sync --project ~/Workspace/Github/escalara-portal
+agents-sync --unproject ~/Workspace/Github/escalara-portal
 ```
 
-Keep `skills/` flat. Agents only discover `skills/<name>/SKILL.md`, so put groups in
-`skills-by-group/`, never as subfolders of `skills/`.
+## How a sync works
+
+1. **Import.** Anything new that an installer put straight into one app (`npx skills add`,
+   the Agency Agents app, `claude mcp add`, a hand-made Codex agent) is moved into the hub.
+   Secret-looking MCP values go to `.env` and become `${VAR}` placeholders.
+2. **Normalize.** Agent descriptions over 160 characters are shortened so all of them fit Claude
+   Code's 15k-token limit. The original text is kept in `full_description:`.
+3. **Export.** The hub is written into each app. Only entries the tool manages are touched.
+   App-owned items stay where they are: `~/.claude/skills/synced`, `~/.codex/skills/.system`,
+   `~/.cursor/skills-cursor`, Codex plugin MCPs, and MCPs listed in `servers.json` → `unmanaged`.
+4. **Group, commit, push.**
+
+## Everyday use
+
+```sh
+# new skill
+npx skills add <repo>                          # installs into ~/.agents/skills
+# or: mkdir ~/.agents/skills/my-skill && $EDITOR ~/.agents/skills/my-skill/SKILL.md
+
+# new agent
+$EDITOR ~/.agents/agents/engineering-my-agent.md   # prefix = group
+
+# new MCP server: add to mcp/servers.json, e.g.
+#   "github": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-github"],
+#               "env": { "GITHUB_TOKEN": "${GITHUB_TOKEN}" }, "targets": ["claude", "codex", "cursor"] }
+# and put GITHUB_TOKEN=... in ~/.agents/.env
+
+# experiments
+mv my-skill ~/.agents/experimental/skills/ && agents-sync --with-experimental
+
+agents-sync                # then restart the apps (they read these at startup)
+agents-sync --dry-run      # show what would change, change nothing
+```
+
+`targets` (default: all three) limits an MCP server to some apps. `"enabled": false` turns it off
+everywhere. `"extra": {"codex": {...}}` adds app-specific fields (for example Codex timeouts).
+
+## New machine
+
+```sh
+git clone https://github.com/Escalara-SujitG/agents-hub ~/.agents
+ln -s ~/.agents/bin/agents-sync ~/.local/bin/agents-sync
+# recreate ~/.agents/.env (secrets are never in git), then:
+agents-sync
+```
+
+## Undo
+
+Everything is in git: `git -C ~/.agents log`, then `git revert <commit>` and `agents-sync`.
+The pre-hub backups are `backup-skills-2026-11-07.tgz` and `backup-agents-2026-11-07.tgz`
+(not in git), and the last Codex config before each change is in `state/codex-config.toml.bak`.
