@@ -1,0 +1,1 @@
+../../../agents/blender-addon-engineer.md

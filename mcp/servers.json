@@ -1,4 +1,76 @@
 {
-  "servers": {},
-  "unmanaged": ["node_repl", "computer-use"]
+  "servers": {
+    "rea": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents@6.7.0",
+        "mcp"
+      ],
+      "env": {
+        "HOPPER_LAUNCHER_PATH": "/Users/sujitgholap/Applications/Hopper Disassembler.app/Contents/MacOS/hopper"
+      },
+      "targets": [
+        "claude",
+        "cursor",
+        "codex"
+      ],
+      "extra": {
+        "codex": {
+          "startup_timeout_sec": 30,
+          "tool_timeout_sec": 450
+        }
+      }
+    },
+    "ZohoMCP": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "${ZOHOMCP_ARG1}",
+        "--transport",
+        "http-only"
+      ],
+      "targets": [
+        "claude"
+      ]
+    },
+    "shadcn": {
+      "command": "npx",
+      "args": [
+        "shadcn@latest",
+        "mcp"
+      ],
+      "targets": [
+        "cursor"
+      ]
+    },
+    "posthog": {
+      "url": "https://mcp.posthog.com/mcp",
+      "targets": [
+        "cursor",
+        "codex"
+      ],
+      "extra": {
+        "codex": {
+          "startup_timeout_sec": 30.0
+        }
+      }
+    },
+    "atlassian": {
+      "url": "https://mcp.atlassian.com/v2/mcp",
+      "targets": [
+        "codex"
+      ]
+    },
+    "expo": {
+      "url": "https://mcp.expo.dev/mcp",
+      "targets": [
+        "codex"
+      ]
+    }
+  },
+  "unmanaged": [
+    "node_repl",
+    "computer-use"
+  ]
 }

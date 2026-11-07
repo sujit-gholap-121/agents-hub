@@ -1,0 +1,1 @@
+../../../agents/engineering-ats-validator-architect.md

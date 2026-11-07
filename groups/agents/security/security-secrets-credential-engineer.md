@@ -1,0 +1,1 @@
+../../../agents/security-secrets-credential-engineer.md

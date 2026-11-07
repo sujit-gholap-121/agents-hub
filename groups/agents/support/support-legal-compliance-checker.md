@@ -1,0 +1,1 @@
+../../../agents/support-legal-compliance-checker.md

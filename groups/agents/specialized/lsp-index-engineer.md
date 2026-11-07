@@ -1,0 +1,1 @@
+../../../agents/lsp-index-engineer.md

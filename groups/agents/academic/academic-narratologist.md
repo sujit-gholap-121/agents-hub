@@ -1,0 +1,1 @@
+../../../agents/academic-narratologist.md

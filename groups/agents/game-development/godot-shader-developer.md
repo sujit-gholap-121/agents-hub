@@ -1,0 +1,1 @@
+../../../agents/godot-shader-developer.md
