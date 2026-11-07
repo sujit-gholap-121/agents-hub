@@ -1,0 +1,11 @@
+{
+  "skills": {
+    "agents-and-terminals": ["herdr", "call-cursor-agent", "find-skills", "full-output-enforcement"],
+    "design-ui": ["apple-design", "design-taste-frontend", "design-taste-frontend-v1", "gpt-taste", "high-end-visual-design", "minimalist-ui", "industrial-brutalist-ui", "stitch-design-taste", "redesign-existing-projects", "web-design-guidelines", "image-to-code"],
+    "mockups-and-branding": ["imagegen-frontend-web", "imagegen-frontend-mobile", "brandkit"],
+    "higgsfield-media": ["higgsfield-brandkit", "higgsfield-faceless-video", "higgsfield-generate", "higgsfield-marketplace-cards", "higgsfield-product-photoshoot", "higgsfield-soul-id", "higgsfield-video-explainer", "higgsfield-websites", "higgsfield-youtube-thumbnail"],
+    "backend-database": ["supabase", "supabase-postgres-best-practices"],
+    "testing-browser": ["playwright-cli"],
+    "reverse-engineering": ["reverse-engineer-anything"]
+  }
+}

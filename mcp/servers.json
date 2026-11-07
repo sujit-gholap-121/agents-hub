@@ -1,0 +1,4 @@
+{
+  "servers": {},
+  "unmanaged": ["node_repl", "computer-use"]
+}

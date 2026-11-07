@@ -1,0 +1,289 @@
+{
+  "version": 3,
+  "skills": {
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "76a98a285cb0434f3d39e1a873823556330e398b",
+      "installedAt": "2026-07-19T15:59:27.835Z",
+      "updatedAt": "2026-07-19T15:59:27.835Z"
+    },
+    "brandkit": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Leonxlnx/taste-skill.git",
+      "skillPath": "skills/brandkit/SKILL.md",
+      "skillFolderHash": "d278ff748cafab01e4ae5dd7758fc0b53258621c",
+      "installedAt": "2026-09-26T12:50:16.338Z",
+      "updatedAt": "2026-09-26T12:50:16.338Z"
+    },
+    "industrial-brutalist-ui": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Leonxlnx/taste-skill.git",
+      "skillPath": "skills/brutalist-skill/SKILL.md",
+      "skillFolderHash": "f812ede7e5c34cf680f629911e9f9ac05e416cf4",
+      "installedAt": "2026-09-26T12:50:16.340Z",
+      "updatedAt": "2026-09-26T12:50:16.340Z"
+    },
+    "gpt-taste": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Leonxlnx/taste-skill.git",
+      "skillPath": "skills/gpt-tasteskill/SKILL.md",
+      "skillFolderHash": "c87d529ad945cd35985b19475bf53f41682d4f69",
+      "installedAt": "2026-09-26T12:50:16.341Z",
+      "updatedAt": "2026-09-26T12:50:16.341Z"
+    },
+    "image-to-code": {
+      "source": "openai/role-specific-plugins",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/openai/role-specific-plugins.git",
+      "skillPath": "plugins/product-design/skills/image-to-code/SKILL.md",
+      "skillFolderHash": "171bf7a1f77ff0db193c7b6973e8439dcccc6c5f",
+      "installedAt": "2026-09-26T12:50:16.341Z",
+      "updatedAt": "2026-09-26T13:04:25.095Z"
+    },
+    "imagegen-frontend-mobile": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Leonxlnx/taste-skill.git",
+      "skillPath": "skills/imagegen-frontend-mobile/SKILL.md",
+      "skillFolderHash": "9901fcde67e9506a706912107825fdfb72e01f30",
+      "installedAt": "2026-09-26T12:50:16.342Z",
+      "updatedAt": "2026-09-26T12:50:16.342Z"
+    },
+    "imagegen-frontend-web": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Leonxlnx/taste-skill.git",
+      "skillPath": "skills/imagegen-frontend-web/SKILL.md",
+      "skillFolderHash": "3b5117d349200e33f9c3399344681620079dcc18",
+      "installedAt": "2026-09-26T12:50:16.342Z",
+      "updatedAt": "2026-09-26T12:50:16.342Z"
+    },
+    "minimalist-ui": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Leonxlnx/taste-skill.git",
+      "skillPath": "skills/minimalist-skill/SKILL.md",
+      "skillFolderHash": "5509c012862cda27e2ed7efae89ed940ecc53add",
+      "installedAt": "2026-09-26T12:50:16.342Z",
+      "updatedAt": "2026-09-26T12:50:16.342Z"
+    },
+    "full-output-enforcement": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Leonxlnx/taste-skill.git",
+      "skillPath": "skills/output-skill/SKILL.md",
+      "skillFolderHash": "3dd6ad49b667d15182acddc9d3e4f7763ae33c9c",
+      "installedAt": "2026-09-26T12:50:16.343Z",
+      "updatedAt": "2026-09-26T12:50:16.343Z"
+    },
+    "redesign-existing-projects": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Leonxlnx/taste-skill.git",
+      "skillPath": "skills/redesign-skill/SKILL.md",
+      "skillFolderHash": "d9cffe56d26d4af7687299e391a7be1cfaf46c1b",
+      "installedAt": "2026-09-26T12:50:16.343Z",
+      "updatedAt": "2026-09-26T12:50:16.343Z"
+    },
+    "high-end-visual-design": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Leonxlnx/taste-skill.git",
+      "skillPath": "skills/soft-skill/SKILL.md",
+      "skillFolderHash": "1b5943432ddd1b980206968c529a323cc992dbec",
+      "installedAt": "2026-09-26T12:50:16.344Z",
+      "updatedAt": "2026-09-26T12:50:16.344Z"
+    },
+    "stitch-design-taste": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Leonxlnx/taste-skill.git",
+      "skillPath": "skills/stitch-skill/SKILL.md",
+      "skillFolderHash": "de2038cf286b31f33b397c1308455dbc17ef26f3",
+      "installedAt": "2026-09-26T12:50:16.345Z",
+      "updatedAt": "2026-09-26T12:50:16.345Z"
+    },
+    "design-taste-frontend": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Leonxlnx/taste-skill.git",
+      "skillPath": "skills/taste-skill/SKILL.md",
+      "skillFolderHash": "5743b6eb4d005c5bbe51aa4ecae701eb052d6198",
+      "pluginName": "taste-skill",
+      "installedAt": "2026-09-26T12:50:16.345Z",
+      "updatedAt": "2026-11-06T03:33:48.975Z"
+    },
+    "design-taste-frontend-v1": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Leonxlnx/taste-skill.git",
+      "skillPath": "skills/taste-skill-v1/SKILL.md",
+      "skillFolderHash": "3642ecef471a6ee4d9d485feea6df8ba92616b78",
+      "installedAt": "2026-09-26T12:50:16.345Z",
+      "updatedAt": "2026-09-26T12:50:16.345Z"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
+      "installedAt": "2026-09-26T12:59:16.785Z",
+      "updatedAt": "2026-09-26T12:59:16.785Z"
+    },
+    "supabase-postgres-best-practices": {
+      "source": "supabase/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/supabase/agent-skills.git",
+      "skillPath": "skills/supabase-postgres-best-practices/SKILL.md",
+      "skillFolderHash": "27bde25111c4cd5e6f803fc9db5fbffe27bb26cf",
+      "pluginName": "postgres-best-practices",
+      "installedAt": "2026-10-09T17:37:27.201Z",
+      "updatedAt": "2026-10-09T17:37:27.201Z"
+    },
+    "supabase": {
+      "source": "supabase/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/supabase/agent-skills.git",
+      "skillPath": "skills/supabase/SKILL.md",
+      "skillFolderHash": "57b975708a53ce7a56df25822871b71da6d9312a",
+      "pluginName": "supabase",
+      "installedAt": "2026-10-09T17:37:27.203Z",
+      "updatedAt": "2026-10-09T17:37:27.203Z"
+    },
+    "call-cursor-agent": {
+      "source": "dotneet/claude-code-marketplace",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/dotneet/claude-code-marketplace.git",
+      "skillPath": "agent-call/skills/call-cursor-agent/SKILL.md",
+      "skillFolderHash": "2c907aec64386784cd7a8d950f58bfcf4dc9de34",
+      "installedAt": "2026-10-24T16:44:03.345Z",
+      "updatedAt": "2026-10-24T16:44:03.345Z"
+    },
+    "apple-design": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/emilkowalski/skills.git",
+      "skillPath": "skills/apple-design/SKILL.md",
+      "skillFolderHash": "cd509ae729c86487d352e17a26651217a4c25711",
+      "installedAt": "2026-11-06T03:30:36.821Z",
+      "updatedAt": "2026-11-06T03:30:36.821Z"
+    },
+    "higgsfield-brandkit": {
+      "source": "higgsfield-ai/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/higgsfield-ai/skills.git",
+      "skillPath": "higgsfield-brandkit/SKILL.md",
+      "skillFolderHash": "df239514974efa96d41798adcfdad6ea4b9fbf07",
+      "pluginName": "higgsfield",
+      "installedAt": "2026-11-06T04:00:12.218Z",
+      "updatedAt": "2026-11-06T04:00:12.218Z"
+    },
+    "higgsfield-faceless-video": {
+      "source": "higgsfield-ai/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/higgsfield-ai/skills.git",
+      "skillPath": "higgsfield-faceless-video/SKILL.md",
+      "skillFolderHash": "3c8422ce1c6957ec808cc2e29b238f09f544be11",
+      "pluginName": "higgsfield",
+      "installedAt": "2026-11-06T04:00:12.219Z",
+      "updatedAt": "2026-11-06T04:00:12.219Z"
+    },
+    "higgsfield-generate": {
+      "source": "higgsfield-ai/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/higgsfield-ai/skills.git",
+      "skillPath": "higgsfield-generate/SKILL.md",
+      "skillFolderHash": "df741dd7f404a69737fc2932d0817719e198af7a",
+      "pluginName": "higgsfield",
+      "installedAt": "2026-11-06T04:00:12.220Z",
+      "updatedAt": "2026-11-06T04:00:12.220Z"
+    },
+    "higgsfield-marketplace-cards": {
+      "source": "higgsfield-ai/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/higgsfield-ai/skills.git",
+      "skillPath": "higgsfield-marketplace-cards/SKILL.md",
+      "skillFolderHash": "dd4941e810db2bb8bb425bd31c3b6239ec383882",
+      "pluginName": "higgsfield",
+      "installedAt": "2026-11-06T04:00:12.220Z",
+      "updatedAt": "2026-11-06T04:00:12.220Z"
+    },
+    "higgsfield-product-photoshoot": {
+      "source": "higgsfield-ai/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/higgsfield-ai/skills.git",
+      "skillPath": "higgsfield-product-photoshoot/SKILL.md",
+      "skillFolderHash": "6444cd228cbcfd06aded80443584d284471716b9",
+      "pluginName": "higgsfield",
+      "installedAt": "2026-11-06T04:00:12.220Z",
+      "updatedAt": "2026-11-06T04:00:12.220Z"
+    },
+    "higgsfield-soul-id": {
+      "source": "higgsfield-ai/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/higgsfield-ai/skills.git",
+      "skillPath": "higgsfield-soul-id/SKILL.md",
+      "skillFolderHash": "a6fd7da975912909cde7d7b0697369a1114c1b9d",
+      "pluginName": "higgsfield",
+      "installedAt": "2026-11-06T04:00:12.221Z",
+      "updatedAt": "2026-11-06T04:00:12.221Z"
+    },
+    "higgsfield-video-explainer": {
+      "source": "higgsfield-ai/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/higgsfield-ai/skills.git",
+      "skillPath": "higgsfield-video-explainer/SKILL.md",
+      "skillFolderHash": "25bac2d1e12c2253b9abe52bb1aa2e544efeb060",
+      "pluginName": "higgsfield",
+      "installedAt": "2026-11-06T04:00:12.221Z",
+      "updatedAt": "2026-11-06T04:00:12.221Z"
+    },
+    "higgsfield-websites": {
+      "source": "higgsfield-ai/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/higgsfield-ai/skills.git",
+      "skillPath": "higgsfield-websites/SKILL.md",
+      "skillFolderHash": "ded32c3950db719dcfb4c842cba7839a95f09857",
+      "pluginName": "higgsfield",
+      "installedAt": "2026-11-06T04:00:12.221Z",
+      "updatedAt": "2026-11-06T04:00:12.221Z"
+    },
+    "higgsfield-youtube-thumbnail": {
+      "source": "higgsfield-ai/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/higgsfield-ai/skills.git",
+      "skillPath": "higgsfield-youtube-thumbnail/SKILL.md",
+      "skillFolderHash": "5381648ebe24f5acbeeae29dac5d983771660b0b",
+      "pluginName": "higgsfield",
+      "installedAt": "2026-11-06T04:00:12.221Z",
+      "updatedAt": "2026-11-06T04:00:12.221Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "cline",
+    "codex",
+    "cursor",
+    "droid",
+    "fx",
+    "gemini-cli",
+    "github-copilot",
+    "kilo",
+    "kimi-code-cli",
+    "opencode",
+    "pi",
+    "warp",
+    "zed",
+    "claude-code"
+  ]
+}

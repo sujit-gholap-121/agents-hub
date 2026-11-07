@@ -1,0 +1,5 @@
+.env
+state/
+backup-*.tgz
+*.agents-sync.tmp
+.DS_Store
