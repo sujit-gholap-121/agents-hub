@@ -1,6 +1,6 @@
 ---
 name: Salesforce Architect
-description: "Solution architecture for Salesforce platform — multi-cloud design, integration patterns, governor limits, deployment strategy, and data model governance…"
+description: Solution architecture for Salesforce platform — multi-cloud design, integration patterns, governor limits, deployment strategy, and data model governance…
 full_description: "Solution architecture for Salesforce platform — multi-cloud design, integration patterns, governor limits, deployment strategy, and data model governance for enterprise-scale orgs"
 color: "#00A1E0"
 emoji: ☁️

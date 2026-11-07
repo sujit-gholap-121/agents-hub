@@ -1,6 +1,6 @@
 ---
 name: Application Security Engineer
-description: "AppSec specialist who secures the software development lifecycle through threat modeling, secure code review, SAST/DAST integration, and developer security…"
+description: AppSec specialist who secures the software development lifecycle through threat modeling, secure code review, SAST/DAST integration, and developer security…
 full_description: "AppSec specialist who secures the software development lifecycle through threat modeling, secure code review, SAST/DAST integration, and developer security education that makes secure code the default."
 color: "#059669"
 emoji: 🔐

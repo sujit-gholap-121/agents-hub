@@ -1,6 +1,6 @@
 ---
 name: TikTok Strategist
-description: "Expert TikTok marketing specialist focused on viral content creation, algorithm optimization, and community building"
+description: Expert TikTok marketing specialist focused on viral content creation, algorithm optimization, and community building
 full_description: "Expert TikTok marketing specialist focused on viral content creation, algorithm optimization, and community building. Masters TikTok's unique culture and features for brand growth."
 color: "#000000"
 emoji: 🎵

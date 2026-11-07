@@ -1,6 +1,6 @@
 ---
 name: Technical Consultant
-description: "Strategic GIS advisor who translates business problems into geospatial solutions"
+description: Strategic GIS advisor who translates business problems into geospatial solutions
 full_description: "Strategic GIS advisor who translates business problems into geospatial solutions — gap analysis, technology roadmaps, RFP responses, and digital transformation strategy across Esri and open-source ecosystems."
 color: navy
 emoji: 🧠

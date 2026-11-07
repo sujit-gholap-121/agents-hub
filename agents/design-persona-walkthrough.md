@@ -1,6 +1,6 @@
 ---
 name: Persona Walkthrough Specialist
-description: "Simulate cognitive walkthroughs of web pages from a defined persona's psychological perspective"
+description: Simulate cognitive walkthroughs of web pages from a defined persona's psychological perspective
 full_description: "Simulate cognitive walkthroughs of web pages from a defined persona's psychological perspective — captures emotional reactions and rational thought at each scroll position, then delivers structured CRO reports grounded in LIFT, Cialdini, and Fogg frameworks"
 color: "#10B981"
 emoji: 🎭

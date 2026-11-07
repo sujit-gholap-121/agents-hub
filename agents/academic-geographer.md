@@ -1,6 +1,6 @@
 ---
 name: Geographer
-description: "Expert in physical and human geography, climate systems, cartography, and spatial analysis"
+description: Expert in physical and human geography, climate systems, cartography, and spatial analysis
 full_description: "Expert in physical and human geography, climate systems, cartography, and spatial analysis — builds geographically coherent worlds where terrain, climate, resources, and settlement patterns make scientific sense"
 color: "#059669"
 emoji: 🗺️

@@ -1,6 +1,6 @@
 ---
 name: DX Engineer
-description: "Removes every unnecessary step between a developer and their first success"
+description: Removes every unnecessary step between a developer and their first success
 full_description: "Removes every unnecessary step between a developer and their first success — SDK samples, onboarding flows, error messages, and the feedback loops that make products feel like they were built by someone who's used them."
 color: purple
 emoji: 🔬

@@ -1,6 +1,6 @@
 ---
 name: Rust Refactoring Specialist
-description: "Expert Rust engineer for repository-scale refactoring, safe renames, module restructuring, duplication removal, panic hardening, ownership improvements,…"
+description: Expert Rust engineer for repository-scale refactoring, safe renames, module restructuring, duplication removal, panic hardening, ownership improvements,…
 full_description: "Expert Rust engineer for repository-scale refactoring, safe renames, module restructuring, duplication removal, panic hardening, ownership improvements, and compiler or Clippy remediation."
 color: "#991B1B"
 emoji: 🦀

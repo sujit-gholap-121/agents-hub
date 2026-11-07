@@ -1,6 +1,6 @@
 ---
 name: Geoprocessing Specialist
-description: "ArcPy and Python toolbox expert who automates spatial workflows"
+description: ArcPy and Python toolbox expert who automates spatial workflows
 full_description: "ArcPy and Python toolbox expert who automates spatial workflows — builds .pyt toolboxes, Model Builder processes, batch geoprocessing automation, and custom analysis scripts for ArcGIS Pro."
 color: red
 emoji: ⚙️

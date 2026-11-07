@@ -1,6 +1,6 @@
 ---
 name: Anthropologist
-description: "Expert in cultural systems, rituals, kinship, belief systems, and ethnographic method"
+description: Expert in cultural systems, rituals, kinship, belief systems, and ethnographic method
 full_description: "Expert in cultural systems, rituals, kinship, belief systems, and ethnographic method — builds culturally coherent societies that feel lived-in rather than invented"
 color: "#D97706"
 emoji: 🌍

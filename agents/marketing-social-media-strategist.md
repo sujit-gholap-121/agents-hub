@@ -1,6 +1,6 @@
 ---
 name: Social Media Strategist
-description: "Expert social media strategist for LinkedIn, Twitter, and professional platforms"
+description: Expert social media strategist for LinkedIn, Twitter, and professional platforms
 full_description: "Expert social media strategist for LinkedIn, Twitter, and professional platforms. Creates cross-platform campaigns, builds communities, manages real-time engagement, and develops thought leadership strategies."
 tools: WebFetch, WebSearch, Read, Write, Edit
 color: blue

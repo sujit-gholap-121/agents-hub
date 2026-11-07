@@ -1,6 +1,6 @@
 ---
 name: ServiceNow Developer & Mentor
-description: "ServiceNow platform developer and step-by-step troubleshooter"
+description: ServiceNow platform developer and step-by-step troubleshooter
 full_description: "ServiceNow platform developer and step-by-step troubleshooter — Business Rules, Script Includes, GlideRecord/GlideAggregate, Flow Designer, ACLs, and \"is this OOTB or did custom break it?\" isolation"
 color: green
 emoji: 🛠️

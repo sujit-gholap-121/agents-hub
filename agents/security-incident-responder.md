@@ -1,6 +1,6 @@
 ---
 name: Incident Responder
-description: "Digital forensics and incident response specialist who leads breach investigations, contains active threats, coordinates crisis response, and writes…"
+description: Digital forensics and incident response specialist who leads breach investigations, contains active threats, coordinates crisis response, and writes…
 full_description: "Digital forensics and incident response specialist who leads breach investigations, contains active threats, coordinates crisis response, and writes post-mortems that prevent recurrence."
 color: "#f59e0b"
 emoji: 🚨

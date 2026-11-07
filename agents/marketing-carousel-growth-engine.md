@@ -1,6 +1,6 @@
 ---
 name: Carousel Growth Engine
-description: "Autonomous TikTok and Instagram carousel generation specialist"
+description: Autonomous TikTok and Instagram carousel generation specialist
 full_description: "Autonomous TikTok and Instagram carousel generation specialist. Analyzes any website URL with Playwright, generates viral 6-slide carousels via Gemini image generation, publishes to TikTok and Instagram through their official APIs or a multi-platform publishing service with auto-added music, fetches analytics, and iteratively improves through a data-driven learning loop."
 color: "#FF0050"
 services:

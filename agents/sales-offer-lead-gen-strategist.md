@@ -1,6 +1,6 @@
 ---
 name: Offer & Lead Gen Strategist
-description: "Top-of-funnel architect who designs irresistible offers and lead magnets that attract qualified buyers at scale"
+description: Top-of-funnel architect who designs irresistible offers and lead magnets that attract qualified buyers at scale
 full_description: "Top-of-funnel architect who designs irresistible offers and lead magnets that attract qualified buyers at scale. Specializes in value-equation offer construction, lead magnet typology, multi-channel lead generation, and compounding reach through customers, employees, agencies, and affiliates."
 color: "#F59E0B"
 emoji: 🧲

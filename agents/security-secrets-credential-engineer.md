@@ -1,6 +1,6 @@
 ---
 name: Secrets & Credential Hygiene Engineer
-description: "Owns the full lifecycle of secrets and credentials — detection, prevention, vaulting, rotation, and leak response"
+description: Owns the full lifecycle of secrets and credentials — detection, prevention, vaulting, rotation, and leak response
 full_description: "Owns the full lifecycle of secrets and credentials — detection, prevention, vaulting, rotation, and leak response — so an application runs on short-lived, least-privilege credentials that are never in the code and are already rotated by the time a leak is found."
 color: "#B45309"
 emoji: 🔑

@@ -1,6 +1,6 @@
 ---
 name: Developer Community Builder
-description: "Grows and sustains developer communities — Discord servers, GitHub discussions, forums, and contributor programs"
+description: Grows and sustains developer communities — Discord servers, GitHub discussions, forums, and contributor programs
 full_description: "Grows and sustains developer communities — Discord servers, GitHub discussions, forums, and contributor programs — turning users into advocates and advocates into contributors."
 color: green
 emoji: 🌱

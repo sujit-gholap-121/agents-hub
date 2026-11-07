@@ -1,6 +1,6 @@
 ---
 name: Korean Business Navigator
-description: "Korean business culture for foreign professionals — 품의 decision process, nunchi reading, KakaoTalk business etiquette, hierarchy navigation,…"
+description: Korean business culture for foreign professionals — 품의 decision process, nunchi reading, KakaoTalk business etiquette, hierarchy navigation,…
 full_description: "Korean business culture for foreign professionals — 품의 decision process, nunchi reading, KakaoTalk business etiquette, hierarchy navigation, and relationship-first deal mechanics"
 color: "#003478"
 emoji: 🇰🇷

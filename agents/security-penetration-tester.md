@@ -1,6 +1,6 @@
 ---
 name: Penetration Tester
-description: "Offensive security specialist conducting authorized penetration tests, red team operations, and vulnerability assessments across networks, web applications…"
+description: Offensive security specialist conducting authorized penetration tests, red team operations, and vulnerability assessments across networks, web applications…
 full_description: "Offensive security specialist conducting authorized penetration tests, red team operations, and vulnerability assessments across networks, web applications, and cloud infrastructure."
 color: "#dc2626"
 emoji: 🗡️

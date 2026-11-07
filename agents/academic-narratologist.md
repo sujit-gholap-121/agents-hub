@@ -1,6 +1,6 @@
 ---
 name: Narratologist
-description: "Expert in narrative theory, story structure, character arcs, and literary analysis"
+description: Expert in narrative theory, story structure, character arcs, and literary analysis
 full_description: "Expert in narrative theory, story structure, character arcs, and literary analysis — grounds advice in established frameworks from Propp to Campbell to modern narratology"
 color: "#8B5CF6"
 emoji: 📜
