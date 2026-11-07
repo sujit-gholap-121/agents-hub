@@ -491,6 +491,66 @@ def export_skills():
         log(f"  → skills: {changed} links updated")
 
 
+def agent_name(p):
+    fm, _ = split_fm(p.read_text())
+    return (fm_get(fm, "name") if fm else None) or p.stem
+
+
+def project_own_agents(proj):
+    """Agent files and names a project defines itself (real files, not our hub links)."""
+    own = set()
+    for sub in (".cursor/agents", ".claude/agents", ".agents/agents"):
+        folder = proj / sub
+        if not folder.is_dir():
+            continue
+        for p in folder.glob("*.md"):
+            if points_into_hub(p):
+                continue
+            own.add(p.name)
+            try:
+                own.add(agent_name(p))
+            except OSError:
+                pass
+    return own
+
+
+def report_skill_overlap(proj):
+    """Project skills are the project's: never touched. Warn where a hub skill shares a name,
+    because Claude Code lets a personal skill shadow a project one (Codex lets the project win)."""
+    seen = set()
+    for sub in (".claude/skills", ".agents/skills", ".cursor/skills", ".codex/skills"):
+        folder = proj / sub
+        if folder.is_dir():
+            seen |= {p.name for p in folder.iterdir() if (p / "SKILL.md").exists()}
+    clash = sorted(n for n in seen if (SKILLS / n / "SKILL.md").exists())
+
+    def canon(folder):
+        # Content only: ignore formatting a project's Prettier applies (spaces, list markers, quotes).
+        out = {}
+        for f in sorted(folder.rglob("*")):
+            if f.is_file() and f.suffix.lower() in (".md", ".yaml", ".yml", ".txt", ".json"):
+                t = f.read_text(errors="ignore")
+                t = re.sub(r"(?m)^[ \t>]*(\d+[.)]|[-*+])[ \t]+", "", t)  # list markers / numbering
+                t = re.sub(r"\\([\\`*_{}\[\]()#+\-.!|<>])", r"\1", t)     # markdown escapes
+                out[str(f.relative_to(folder))] = re.sub(r"[\s*'\"`_;()-]", "", t)
+        return out
+
+    def project_copy(n):
+        for sub in (".claude/skills", ".agents/skills", ".cursor/skills", ".codex/skills"):
+            if (proj / sub / n / "SKILL.md").exists():
+                return proj / sub / n
+
+    differ = []
+    for n in clash:
+        mine, theirs = canon(SKILLS / n), canon(project_copy(n))
+        shared = set(mine) & set(theirs)
+        if any(mine[k] != theirs[k] for k in shared) or set(theirs) - set(mine):
+            differ.append(n)
+    if differ:
+        log(f"  ! {proj.name}: {len(differ)} skill(s) share a name with the hub but differ "
+            f"(in Claude Code the hub copy wins there): {', '.join(differ)}")
+
+
 def agent_files():
     files = {p.name: p for p in AGENTS.glob("*.md")}
     if WITH_EXP and (EXP / "agents").is_dir():
@@ -515,9 +575,15 @@ def export_agents(state):
             log(f"  ! Cursor project {d} is gone; dropping it")
             continue
         pa = Path(d) / ".cursor" / "agents"
-        for n, p in files.items():
+        # The project's own agents always win: never link a hub agent over one it defines.
+        own = project_own_agents(Path(d))
+        wanted = {n: p for n, p in files.items() if n not in own and agent_name(p) not in own}
+        for n, p in wanted.items():
             changed += link(p, pa / n)
-        prune_links(pa, set(files))
+        prune_links(pa, set(wanted))
+        if len(wanted) < len(files):
+            log(f"  · {Path(d).name}: {len(files) - len(wanted)} hub agents skipped (the project has its own)")
+        report_skill_overlap(Path(d))
         if d in ADD_PROJECTS:
             log(f"  + Cursor project {d}: agents linked into .cursor/agents")
             # keep the links out of that repo's git status (local exclude, never committed)
