@@ -6,6 +6,7 @@
     "higgsfield-media": ["higgsfield-brandkit", "higgsfield-faceless-video", "higgsfield-generate", "higgsfield-marketplace-cards", "higgsfield-product-photoshoot", "higgsfield-soul-id", "higgsfield-video-explainer", "higgsfield-websites", "higgsfield-youtube-thumbnail"],
     "backend-database": ["supabase", "supabase-postgres-best-practices"],
     "testing-browser": ["playwright-cli"],
-    "reverse-engineering": ["reverse-engineer-anything"]
+    "reverse-engineering": ["reverse-engineer-anything"],
+    "matt-pocock": ["grilling", "grill-me", "grill-with-docs", "handoff", "wait-what", "to-questionnaire", "writing-for-agents", "retro", "wizard", "codebase-design", "domain-modeling", "improve-codebase-architecture"]
   }
 }
