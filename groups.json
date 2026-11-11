@@ -7,6 +7,6 @@
     "backend-database": ["supabase", "supabase-postgres-best-practices"],
     "testing-browser": ["playwright-cli"],
     "reverse-engineering": ["reverse-engineer-anything"],
-    "matt-pocock": ["grilling", "grill-me", "grill-with-docs", "handoff", "wait-what", "to-questionnaire", "writing-for-agents", "retro", "wizard", "codebase-design", "domain-modeling", "improve-codebase-architecture"]
+    "matt-pocock": ["grilling", "grill-me", "grill-with-docs", "handoff", "wait-what", "to-questionnaire", "writing-for-agents", "retro", "wizard", "codebase-design", "domain-modeling", "improve-codebase-architecture", "ask-matt", "code-review", "diagnosing-bugs", "implement", "implement-spec", "pr", "prototype", "research", "setup-matt-pocock-skills", "tdd", "to-spec", "to-tickets", "triage", "wayfinder", "teach"]
   }
 }
