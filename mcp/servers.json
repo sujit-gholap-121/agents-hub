@@ -8,7 +8,7 @@
         "mcp"
       ],
       "env": {
-        "HOPPER_LAUNCHER_PATH": "/Users/sujitgholap/Applications/Hopper Disassembler.app/Contents/MacOS/hopper"
+        "HOPPER_LAUNCHER_PATH": "${HOPPER_LAUNCHER_PATH}"
       },
       "targets": [
         "claude",

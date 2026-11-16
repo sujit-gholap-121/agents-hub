@@ -7,7 +7,7 @@ The single source of truth for my AI agent setup. Claude Code, Codex and Cursor 
 agents-sync
 ```
 
-Backed up to the private repo `Escalara-SujitG/agents-hub` (every sync commits and pushes).
+Backed up to the public repo `Escalara-SujitG/agents-hub` (every sync commits and pushes).
 
 ## Layout
 
