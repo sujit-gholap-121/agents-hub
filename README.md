@@ -7,7 +7,7 @@ The single source of truth for my AI agent setup. Claude Code, Codex and Cursor 
 agents-sync
 ```
 
-Backed up to the public repo `Escalara-SujitG/agents-hub` (every sync commits and pushes).
+Backed up to the public repo `sujit-gholap-121/agents-hub` (every sync commits and pushes).
 
 ## Layout
 
@@ -82,7 +82,7 @@ everywhere. `"extra": {"codex": {...}}` adds app-specific fields (for example Co
 ## New machine
 
 ```sh
-git clone https://github.com/Escalara-SujitG/agents-hub ~/.agents
+git clone https://github.com/sujit-gholap-121/agents-hub ~/.agents
 ln -s ~/.agents/bin/agents-sync ~/.local/bin/agents-sync
 # recreate ~/.agents/.env (secrets are never in git), then:
 agents-sync
